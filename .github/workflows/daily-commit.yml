@@ -38,9 +38,3 @@ jobs:
       
       - name: Run commit script
         run: python notmain.py
-      
-      - name: Push changes
-        run: |
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
